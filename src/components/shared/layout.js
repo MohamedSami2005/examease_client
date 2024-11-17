@@ -38,6 +38,12 @@ function StudentLayout() {
       show: regNo === 'ADMIN' || regNo === 'ADMINCOE',  // Show only if ADMIN and ADMINCOE
     },
     {
+      icon: <IoMdCloudUpload className="text-white text-2xl" />,
+      name: 'Question Bank',
+      path: `/student/${regNo}/questionbank`,
+      show: regNo === 'ADMIN' || regNo === 'ADMINCOE',  // Show only if ADMIN and ADMINCOE
+    },
+    {
       icon: <MdAdminPanelSettings className="text-white text-2xl" />,
       name: 'Admin Management',
       path: `/student/${regNo}/controls`,

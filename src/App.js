@@ -8,6 +8,7 @@ import Control from './components/admin/controls/controls';
 import Students from './components/admin/student/student';
 import Dashboard from './components/admin/dashboard/dashboard';
 import Pass from './components/admin/pass/pass';
+import QuestionBank from './components/admin/questionbank/questionbank';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path='controls' element={<Control />} />
             <Route path='students' element={<Students />} />
             <Route path='password' element={<Pass />} />
+            <Route path='QuestionBank' element={<QuestionBank />} />
           </Route>
         </Routes>
       </Router>
